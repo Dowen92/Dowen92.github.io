@@ -1,153 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+	<head>
+		<title>Deiniol Owen</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Score keeper</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
-<body style="margin: 20px;" >
-  <div id="home">
-        <div id="tag" class="myTagLine">
-          <h1 class="label"> SCORE KEEPER ONLINE</h1>
-        </div>
-  <div id="init" class="box">
-    <div class="columns">
-      <div class="column" style="background-color:rgb(228, 104, 104); padding:10px !important; margin: 5px;">
-        
-        <h3 style="text-align: center; padding: 10px; font-weight: bold;" >Player 1</h3>
-        
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" style="text-align: center;">Name</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <p class="control is-expanded has-icons-left">
-                <input id="player1NameInit" class="input" type="text" placeholder="Name">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" style="text-align: center;" >Health</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <p class="control is-expanded has-icons-left">
-                <input id="player1HealthInit" class="input" type="text" placeholder="Name">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-heart"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-
-      </div>
-
-      <div class="column" style="background-color:cadetblue; padding:10px !important;  margin: 5px;">
-        <h3 style="text-align: center; padding: 10px; font-weight: bold;" >Player 2</h3>
-        
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" style="text-align: center;">Name</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <p class="control is-expanded has-icons-left">
-                <input id="player2NameInit" class="input" type="text" placeholder="Name">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-user"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label" style="text-align: center;" >Health</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <p class="control is-expanded has-icons-left">
-                <input id="player2HealthInit" class="input" type="text" placeholder="Name">
-                <span class="icon is-small is-left">
-                  <i class="fas fa-heart"></i>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-    </div>
-    </div>
-
-    <div style="display: flex; justify-content: center;">
-      <button id="startBtn" class="button is-dark">Start game</button>
-    </div>
-
-  </div>
-
-  <div id="game" class="is-hidden" style=" width: 100%;">
-    
-    <div class='columns'>
-      <div class='column' style="background-color:rgb(228, 104, 104); display: flex; flex-direction: column; align-items: center; padding:10px !important;"> 
-        <div class="row" style="display: flex;">
-          <button id="player1HealthDown" class="button is-dark">-</button>
-          <h1 id="player1Name" style="font-weight: bold; padding: 5px;" >player 1 name</h1>
-          <button id="player1HealthUp" class="button is-dark">+</button>          
-        </div>
-        <div id="player1Coin" class="circle has-coin" style="position: absolute; left: 30px; top:110px;"></div>
-        <h1 id="player1Health" style="font-size: 100px; font-weight: bold;">player 1 health</h1>
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+							<h1>Deiniol Owen</h1>
+						</header>
+						
+						<ul class="icons">
+							<li><a href="https://github.com/Dowen92" target="_blank" class="icon brands fa-xs fa-github">Github</a></li>
+							<li><a href="https://linkedin.com/in/deiniol-owen-0708334a" target="_blank" class="icon brands fa-xs fa-linkedin">Linkedin</a></li>
+							<li><a href="https://twitter.com/dowen92Dev" target="_blank" class="icon brands fa-xs fa-twitter">Titter</a></li>							
+						</ul>
+						
+					</section>
 
 
-      </div>  
+			</div>
 
-      <div style="display: flex; justify-content: center; flex-direction: column;">
-        <button id="homeBtn" class="button is-dark" style="margin: 3px;">Home</button>
-        <button id="restartBtn" class="button is-dark" style="margin: 3px;">Restart</button>
-        <button id="endTurnBtn" class="button is-dark" style="margin: 3px;" >End turn</button>
-      </div>
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
 
-      <div class='column' style="background-color:cadetblue; display: flex; flex-direction: column; align-items: center; padding:10px !important;""> 
-        <div class="row" style="display: flex;">
-          <button id="player2HealthDown" class="button is-dark">-</button>
-        <h1 id="player2Name" style="font-weight: bold; padding: 5px;">player 2 name</h1>  
-        <button id="player2HealthUp" class="button is-dark">+</button>  
-      </div>
-
-        <div id="player2Coin" class="circle has-coin" style="position: absolute; right: 30px; top:110px;"></div>
-        <h1 id="player2Health" style="font-size: 100px; font-weight: bold;">player 2 health</h1>
-
-
-
-      </div>
-    </div>
-
-    <div id="winner" class="is-hidden">
-      <h1>WINNER</h1>
-      <h1 id="winner-txt">bob</h1>
-    </div>
-    
-
-  </div>
-
-
-      
-
-  <script src="scripts/scripts.js"></script>
-</body>
-
+	</body>
 </html>
