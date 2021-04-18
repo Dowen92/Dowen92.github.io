@@ -1,0 +1,99 @@
+html {
+    font-family:'Courier New', Courier, monospace;
+    background: rgb(41,41,41);
+    background: linear-gradient(135deg, rgba(18,18,18,1) 0%, rgba(38,38,38,1) 50%, rgba(71,71,71,1) 100%);
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+    margin:0;
+}
+H1 {
+    font-weight: 400;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+a {
+    color:rgb(20, 20, 20);
+}
+.card{   
+    position: relative;
+    margin: auto;
+    background-color: whitesmoke;
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.avatar{
+    margin: auto;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.last-icon {
+    padding-bottom: 15px;
+}
+
+.fab {
+    color: rgb(73, 73, 73);
+   }
+   
+
+.fab:hover {
+ color: rgb(20, 20, 20);
+}
+
+.card svg,
+.card svg rect
+{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 102%;
+    height:101.5%;
+    fill: transparent;
+    overflow: visible;
+    z-index: -1;
+}
+
+.card svg rect{
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 50%; 
+    animation: animate-stroke 5s linear infinite;
+}
+
+@keyframes animate-stroke
+{
+    0%
+    {
+        stroke-dashoffset: 450%;
+    }
+    100%
+    {
+        stroke-dashoffset: 250%;
+    }
+}
