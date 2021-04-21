@@ -79,7 +79,6 @@ a {
 }
 
 .card svg rect{
-    height: 102% !important;
     stroke: rgb(255, 255, 255);
     stroke-width: 2px;
     stroke-dasharray: 100%;
