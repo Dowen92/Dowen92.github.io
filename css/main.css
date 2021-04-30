@@ -56,7 +56,7 @@ a {
     padding-bottom: 15px;
 }
 
-.fab {
+.fab, .fas {
     color: rgb(73, 73, 73);
    }
    
